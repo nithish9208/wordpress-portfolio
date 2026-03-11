@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nithishkumar K - Portfolio: Entry-level Web Developer specializing in WordPress and clean web UI.">
+    <title>Nithishkumar K | Web & WordPress Developer</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_sims.css">
+    <link rel="stylesheet" href="style_experience.css">
+    <link rel="stylesheet" href="style_projects.css">
+    <link rel="stylesheet" href="style_footer.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Background Overlay for Mobile -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Nithish<strong>Dev</strong></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#simulations" class="nav-link">Work Simulations</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="btn btn-primary sm">Hire Me</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="bg-elements">
+                <div class="glow glow-1"></div>
+                <div class="glow glow-2"></div>
+                <div class="grid-overlay"></div>
+            </div>
+            
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in-up">
+                        <span class="pulse"></span> Available for Entry-Level Roles
+                    </div>
+                    <h1 class="hero-title fade-in-up delay-1">
+                        Web Developer |<br>
+                        <span class="highlight">WordPress Learner</span>
+                    </h1>
+                    <p class="hero-subtitle fade-in-up delay-2">
+                        Building responsive, dynamic, and clean websites with strong fundamentals in frontend UI and Python Django backends.
+                    </p>
+                    <div class="hero-actions fade-in-up delay-3">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats fade-in-up delay-4">
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fab fa-wordpress"></i></div>
+                            <span>WordPress Dev</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fab fa-html5"></i></div>
+                            <span>Frontend UI</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon"><i class="fas fa-bug"></i></div>
+                            <span>Bug Fixing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual fade-in">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="file-name">developer-workflow.js</div>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+    <span class="property">name</span>: <span class="string">'Nithishkumar K'</span>,
+    <span class="property">role</span>: <span class="string">'Web & WordPress Developer'</span>,
+    <span class="property">location</span>: <span class="string">'Chennai, India'</span>,
+    <span class="property">focus</span>: [
+        <span class="string">'Theme Customization'</span>,
+        <span class="string">'Responsive UI'</span>,
+        <span class="string">'Client Delivery'</span>
+    ],
+    <span class="method">executeWork</span>() {
+        <span class="keyword">return</span> <span class="keyword">this</span>.focus.<span class="method">map</span>(task => <span class="string">\`Delivering \${task}\`</span>);
+    }
+};
+
+<span class="variable">console</span>.<span class="method">log</span>(<span class="variable">developer</span>.<span class="method">executeWork</span>());
+<span class="comment">// Ready to join your team.</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-desc">Entry-level Web Developer focusing on foundational full-stack skills and robust CMS development.</p>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <div class="about-text">
+                        <h3 style="margin-bottom: 16px; font-size: 1.5rem; color: var(--text-primary);">Hi, I'm Nithishkumar K.</h3>
+                        <p style="margin-bottom: 16px; color: var(--text-secondary); line-height: 1.8;">
+                            I'm a passionate web developer with practical internship experience in full-stack web development. I focus on building robust Python Django backends, database-driven applications (MySQL), and crafting clean, responsive user interfaces. 
+                        </p>
+                        <p style="color: var(--text-secondary); line-height: 1.8;">
+                            Currently, I am expanding my expertise by diving deep into WordPress basics, exploring custom theme development, and mastering page builder workflows to deliver high-quality, practical websites for real-world clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Simulations Section -->
+        <section id="simulations" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Real-Time Work Simulations</h2>
+                    <p class="section-desc">Practical execution and problem-solving workflows simulating day-to-day developer tasks in an IT services environment.</p>
+                </div>
+                
+                <div class="simulations-grid">
+                    <!-- Simulation 1 -->
+                    <div class="sim-card animate-on-scroll">
+                        <div class="sim-header">
+                            <div class="ticket-id"><i class="fas fa-ticket-alt"></i> TASK-101</div>
+                            <div class="ticket-status status-done">Completed</div>
+                        </div>
+                        <div class="sim-body">
+                            <h3 class="sim-title">Tourism Platform Module</h3>
+                            <div class="sim-context">
+                                <span class="label">Task:</span> Build tourism management website module during internship simulation.
+                            </div>
+                            
+                            <div class="sim-actions">
+                                <h4><i class="fas fa-hammer"></i> Approach</h4>
+                                <ul>
+                                    <li>Integrated dynamic tour data rendering</li>
+                                    <li>Setup secure login authentication flow</li>
+                                    <li>Connected Django backend with MySQL DB</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="sim-outcome">
+                                <h4><i class="fas fa-check-circle"></i> Outcome</h4>
+                                <p>Successfully simulated full-stack integration and dynamic data display.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simulation 2 -->
+                    <div class="sim-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="sim-header">
+                            <div class="ticket-id feature"><i class="fas fa-star"></i> FEAT-202</div>
+                            <div class="ticket-status status-done">Completed</div>
+                        </div>
+                        <div class="sim-body">
+                            <h3 class="sim-title">Admin Dashboard UI</h3>
+                            <div class="sim-context">
+                                <span class="label">Task:</span> Design employee dashboard UI workflow simulation.
+                            </div>
+                            
+                            <div class="sim-actions">
+                                <h4><i class="fas fa-hammer"></i> Approach</h4>
+                                <ul>
+                                    <li>Structured CSS Grid for dashboard layout</li>
+                                    <li>Optimized table data presentation</li>
+                                    <li>Ensured sidebar navigation responsiveness</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="sim-outcome">
+                                <h4><i class="fas fa-check-circle"></i> Outcome</h4>
+                                <p>Delivered an intuitive, easy-to-use internal data visualization interface.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simulation 3 -->
+                    <div class="sim-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="sim-header">
+                            <div class="ticket-id"><i class="fab fa-wordpress"></i> WP-301</div>
+                            <div class="ticket-status status-learning">R&D</div>
+                        </div>
+                        <div class="sim-body">
+                            <h3 class="sim-title">WP Layout Customization</h3>
+                            <div class="sim-context">
+                                <span class="label">Task:</span> Practice WordPress website layout customization simulation.
+                            </div>
+                            
+                            <div class="sim-actions">
+                                <h4><i class="fas fa-hammer"></i> Approach</h4>
+                                <ul>
+                                    <li>Leveraged visual page builders (Elementor)</li>
+                                    <li>Customized standard theme header/footer structures</li>
+                                    <li>Optimized layout breakpoints for mobile</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="sim-outcome">
+                                <h4><i class="fas fa-check-circle"></i> Outcome</h4>
+                                <p>Grasped efficient CMS layout workflows for rapid client delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience & Timeline Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Internship & Journey</h2>
+                    <p class="section-desc">My professional development and hands-on learning curve in web technologies.</p>
+                </div>
+                
+                <div class="experience-content">
+                    <!-- Internship Project -->
+                    <div class="internship-card animate-on-scroll">
+                        <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                        <div class="card-details">
+                            <h3>Tourism Management Platform Simulation</h3>
+                            <span class="internship-role">Full-Stack Modules Simulation (Internship)</span>
+                            <p>Developed core backend and frontend modules for a simulated tourism platform to understand full application lifecycles.</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Designed and integrated secure login authentication flow</li>
+                                <li><i class="fas fa-check"></i> Built interactive admin dashboards for tour bookings</li>
+                                <li><i class="fas fa-check"></i> Established robust database connectivity for dynamic data rendering</li>
+                            </ul>
+                            <div class="tech-stack-tags">
+                                <span>Python</span><span>Django</span><span>MySQL</span><span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="timeline animate-on-scroll" style="transition-delay: 0.2s;">
+                        <h3 class="timeline-title"><i class="fas fa-road"></i> Learning Journey</h3>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Data & Backend Basics</h4>
+                                <p>Learned fundamental Python concepts, Django routing logic, and database management principles using MySQL.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Internship Experience Phase</h4>
+                                <p>Applied core concepts to build practical full-stack web applications, focusing on simulated UI dashboarding and module integrations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>WordPress Journey Commences</h4>
+                                <p>Started diving into CMS frameworks, exploring WordPress themes, plugins, and page builders.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot current"></div>
+                            <div class="timeline-content">
+                                <h4>Real-World Application Phase</h4>
+                                <p>Currently building this portfolio and deploying simulated real-world client projects to solidify learning and demonstrate practical capability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Project Showcase</h2>
+                    <p class="section-desc">Practical projects and module simulations displaying full-stack capabilities.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-img-wrapper">
+                            <img src="sacred_trails_mockup_1773235333261.png" onerror="this.src=''; this.className='project-img placeholder-1';" alt="Sacred Trails Mockup" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Sacred Trails Cultural Tourism</h3>
+                            <p>Dynamic concept platform managing tourism locations. Focused on robust backend integration for location data rendering and responsive UI modules.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Django</span><span>MySQL</span><span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="project-img-wrapper">
+                            <img src="employee_dash_mockup_1773235352424.png" onerror="this.src=''; this.className='project-img placeholder-2';" alt="Employee Dashboard Mockup" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Employee Management System</h3>
+                            <p>Internal administration dashboard designed to manage employee records securely. Features clean tabular data layouts and easy navigation systems.</p>
+                            <div class="project-tech">
+                                <span>Bootstrap/CSS</span><span>Django</span><span>REST API Basics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="project-img-wrapper">
+                            <div class="demo-label">Simulated Client Delivery</div>
+                            <img src="wp_business_mockup_1773235369401.png" onerror="this.src=''; this.className='project-img placeholder-1';" alt="WP Business Mockup" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>WordPress Practice Website</h3>
+                            <p>A demo service company website demonstrating practical, hands-on WordPress customization skills, page builder familiarity, and responsive layout scaling.</p>
+                            <div class="project-tech">
+                                <span>WordPress Basics</span><span>Page Builders</span><span>Custom CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-secondary sm"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Visualization Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-desc">Core competencies focused on frontend web development and CMS management.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skills-category animate-on-scroll">
+                        <h3><i class="fas fa-code"></i> Frontend / Web Basics</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Responsive Web Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category animate-on-scroll" style="transition-delay: 0.2s;">
+                        <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress backend-progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Django</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress backend-progress" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress backend-progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>REST API Basics</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress backend-progress" style="width: 55%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category animate-on-scroll" style="transition-delay: 0.4s;">
+                        <h3><i class="fab fa-wordpress"></i> WordPress Fundamentals</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Themes Initialization</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress wp-progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Plugins Ecosystem</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress wp-progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Page Builder Layouts</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress wp-progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Growth Mindset Section -->
+        <section id="mindset" class="section">
+            <div class="container">
+                <div class="mindset-wrapper animate-on-scroll">
+                    <div class="mindset-content">
+                        <h2>Continuous Learning & Growth</h2>
+                        <p class="lead-text">"The best developers aren't those who know everything, but those who can learn anything."</p>
+                        <p>As an entry-level professional, my greatest asset is my adaptability. I thrive in simulated environments that mirror real client demands, whether it's restructuring a WordPress theme on a tight deadline, digging into documentation to fix a rogue CSS grid, or learning Django backend logic to understand the full picture.</p>
+                        <p>I embrace debugging challenges as opportunities to strengthen my problem-solving workflow.</p>
+                        
+                        <div class="mindset-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-sync"></i>
+                                <span>Adaptable to Client Needs</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-search-location"></i>
+                                <span>Relentless Debugger</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-book-reader"></i>
+                                <span>Fast Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Hire Me Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card animate-on-scroll">
+                    <div class="contact-info">
+                        <h2>Let's Build Something Great</h2>
+                        <p>I am currently available for entry-level Web Developer and WordPress Developer roles. If you're looking for a fresh talent with a practical execution workflow, let's connect!</p>
+                        
+                        <ul class="contact-details">
+                            <li>
+                                <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                                <span>Chennai, India</span>
+                            </li>
+                            <li>
+                                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                                <span>nithi11716@gmail.com</span>
+                            </li>
+                            <li>
+                                <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                                <span>+91 9787169246</span>
+                            </li>
+                        </ul>
+                        <div style="margin-top: 40px;">
+                            <a href="Nithishkumar_Web_Developer_Resume.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container" style="padding: 40px; background: rgba(15, 23, 42, 0.6);">
+                        <h3 style="margin-bottom: 24px; color: var(--text-primary);">Send a Message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Message sent!');">
+                            <div style="margin-bottom: 16px;">
+                                <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; color: white;">
+                            </div>
+                            <div style="margin-bottom: 16px;">
+                                <input type="email" placeholder="Your Email" required style="width: 100%; padding: 12px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; color: white;">
+                            </div>
+                            <div style="margin-bottom: 16px;">
+                                <textarea placeholder="Message" rows="4" required style="width: 100%; padding: 12px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; color: white; resize: vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">&lt;/&gt;</span>
+                    <span class="logo-text">Nithish<strong>Dev</strong></span>
+                </a>
+                <p>Entry-level Web & WordPress Developer simulating professional IT service delivery workflows.</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nithishkumar K. Designed for professional developer portfolios.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
