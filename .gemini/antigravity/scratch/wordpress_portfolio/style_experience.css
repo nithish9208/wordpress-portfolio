@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Experience & Timeline
+   ========================================================================== */
+.experience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Internship Card */
+.internship-card {
+    background: linear-gradient(145deg, var(--bg-card), rgba(15, 23, 42, 0.8));
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    position: absolute;
+    top: -24px;
+    left: 32px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: white;
+    box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.card-details {
+    margin-top: 16px;
+}
+
+.card-details h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.internship-role {
+    display: inline-block;
+    color: var(--accent-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.card-details p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.card-details ul {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-details li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.card-details li i {
+    color: #10b981;
+    margin-top: 4px;
+    font-size: 0.85rem;
+}
+
+.tech-stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack-tags span {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    transition: var(--transition-fast);
+}
+
+.tech-stack-tags span:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 24px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 4px;
+    height: calc(100% - 60px);
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.timeline-title i {
+    color: #21759b; /* WordPress Blue */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 6px;
+    left: -24px;
+    width: 10px;
+    height: 10px;
+    background: var(--text-muted);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px var(--bg-secondary);
+    transition: var(--transition-normal);
+}
+
+.timeline-item:hover .timeline-dot {
+    background: var(--accent-secondary);
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
+}
+
+.timeline-dot.current {
+    background: var(--accent-primary);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+    animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+    70% { box-shadow: 0 0 0 8px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 12px;
+    transition: var(--transition-normal);
+}
+
+.timeline-content:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: var(--bg-card-hover);
+    transform: translateX(4px);
+}
+
+.timeline-content h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .experience-content {
+        grid-template-columns: 1fr;
+    }
+}
